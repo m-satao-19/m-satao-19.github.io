@@ -11249,6 +11249,11 @@ section.resume-section .resume-section-content {
   color: white;
 }
 
+.skill-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .label {
   padding: 10px;
   margin-left: 10px;
