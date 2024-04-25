@@ -10867,6 +10867,14 @@ p.lead {
   font-size: 1.5rem;
 }
 
+.subheading-white {
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: white;
+}
+
 #sideNav {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -11062,10 +11070,10 @@ section.resume-section .resume-section-content {
 /* The actual content */
 .content-custom {
   padding: 20px 30px;
-  background-color: #78dced;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/img/tile_background.png);
   position: relative;
   border-radius: 6px;
-  color: #000;
+  color: white;
 }
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
@@ -11111,8 +11119,8 @@ section.resume-section .resume-section-content {
 .project-container {
   border: #000;
   /* border: 2px solid #ccc; */
-  color: #000;
-  background-color: #7bd1c1;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/img/tile_background.png);
   /* #eee; */
   border-radius: 5px;
   border-width: 10px;
@@ -11146,8 +11154,8 @@ section.resume-section .resume-section-content {
 .project-container-right {
   border: #000;
   /* border: 2px solid #ccc; */
-  color: #000;
-  background-color: #7bd1c1;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/img/tile_background.png);
   /* #eee; */
   border-radius: 5px;
   border-width: 10px;
@@ -11271,15 +11279,15 @@ section.resume-section .resume-section-content {
 
 .other {
   /* background-color: #e7e7e7;  */
-  color: purple;
+  color: #974a2d;
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   font-size: xx-large;
 } /* Gray */
 
 .other-small {
-  background-color: #e7e7e7; 
-  color: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); 
+  color: white;
   /* font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
   font-weight: 400;
   /* font-size: large; */
@@ -11300,16 +11308,67 @@ section.resume-section .resume-section-content {
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
-  color: black;
+  color: white;
   display: block;
 
-  background: linear-gradient(to right, #78dced, rgba(0,0,0,0));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0,0,0,0));
   border-radius: 50px;
 }
 
 .myUL li a:hover:not(.header) {
   background-color: #eefce9;
 }
+
+/* Certificate */
+.certificate-container {
+  position: relative;
+  border: #000;
+  border-radius: 20px;
+  border-width: 10px;
+  /* padding: 16px; */
+  margin-bottom: 50px;
+  margin-right: 30px;
+
+}
+.certificate-container img {
+  height: 400px; 
+  width: 500px; 
+  display: block;
+}
+
+.certificate-overlay {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+}
+
+.certificate-name {
+  color: white;
+  margin: auto;
+  font-size: x-large;
+}
+
+.certificate-container:hover .certificate-overlay {
+  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0,0,0,0)); */
+  opacity: 1;
+}
+
+@media (max-width:500px){
+  .certificate-container img {
+    height: 40vh; 
+    width: 80vw; 
+  
+  }
+}
+
 
 /* Resrarch */
 
@@ -11318,8 +11377,8 @@ section.resume-section .resume-section-content {
 .research-container {
   border: #000;
   /* border: 2px solid #ccc; */
-  color: #000;
-  background-color: #cab3d6;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/img/tile_background.png);
   /* #eee; */
   border-radius: 20px;
   border-width: 10px;
@@ -11363,4 +11422,3 @@ section.resume-section .resume-section-content {
       display: block;
   }
 }
-
