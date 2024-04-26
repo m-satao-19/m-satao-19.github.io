@@ -11271,6 +11271,12 @@ section.resume-section .resume-section-content {
   flex-wrap: wrap;
 }
 
+.skill-row img {
+  height: 30px;
+  width: auto;
+  margin-right: 4px;
+}
+
 .label {
   padding: 10px;
   margin-left: 10px;
