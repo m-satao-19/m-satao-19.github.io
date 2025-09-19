@@ -22,7 +22,7 @@ I am a Full Stack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEm
 
 - :telescope: Seeking Software Engineer roles and contribute to frontend and backend for building web applications.
 
-- :roboy: Machine Learning enthusiast.
+- :robot: Machine Learning enthusiast.
 
 - :zap: In my free time, I solve problems on Leetcode, read books :book: and play guitar :guitar:.
 
