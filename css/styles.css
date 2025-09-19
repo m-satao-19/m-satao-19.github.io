@@ -10900,6 +10900,7 @@ p.lead {
     flex-direction: column;
     width: 17rem;
     height: 100vh;
+    z-index: 10;
   }
   #sideNav .navbar-brand {
     display: flex;
@@ -11016,7 +11017,7 @@ section.resume-section .resume-section-content {
   position: absolute;
   width: 25px;
   height: 25px;
-  right: -17px;
+  right: -12px;
   background-color: white;
   border: 4px solid #FF9F55;
   top: 15px;
@@ -11064,7 +11065,7 @@ section.resume-section .resume-section-content {
 
 /* Fix the circle for containers on the right side */
 .right-custom::after {
-  left: -16px;
+  left: -12px;
 }
 
 /* The actual content */
@@ -11126,6 +11127,8 @@ section.resume-section .resume-section-content {
   border-width: 10px;
   padding: 16px;
   margin-bottom: 50px;
+  position: relative;
+  z-index: 50;
 
   /* -webkit-box-shadow: 0px 0px 10px #FF9F55;
   -moz-box-shadow: 0px 0px 10px #FF9F55;
@@ -11145,10 +11148,12 @@ section.resume-section .resume-section-content {
   margin-right: 50px;
   /* border-radius: 50%; */
   transition: transform .2s;
-  z-index: 100;
+  position: relative;
+  z-index: 60;
 }
 .project-container img:hover{
   transform: scale(2);
+  z-index: 999;
 }
 
 .project-container span {
@@ -11166,6 +11171,8 @@ section.resume-section .resume-section-content {
   border-width: 10px;
   padding: 16px;
   margin-bottom: 50px;
+  position: relative;
+  z-index: 50;
 
   /* -webkit-box-shadow: 0px 0px 10px #FF9F55;
   -moz-box-shadow: 0px 0px 10px #FF9F55;
@@ -11185,6 +11192,7 @@ section.resume-section .resume-section-content {
   /* margin-right: 15px; */
   /* border-radius: 50%; */
   transition: transform .2s;
+  z-index: 999;
 }
 .project-container-right img:hover{
   transform: scale(2);
@@ -11232,7 +11240,7 @@ section.resume-section .resume-section-content {
 /* The hero image */
 .resume-section-about {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/img/hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/img/profile51.jpg");
 
   /* Set a specific height */
   height: 100vh;
@@ -11247,10 +11255,10 @@ section.resume-section .resume-section-content {
 
 /* Place text in the middle of the image */
 .hero-text {
-  text-align: center;
+  /* text-align: center; */
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 25%;
   transform: translate(-50%, -50%);
   color: white;
 }
@@ -11382,6 +11390,15 @@ section.resume-section .resume-section-content {
     width: 80vw; 
   
   }
+
+  .hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
 }
 
 
